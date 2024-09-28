@@ -36,11 +36,18 @@ Once the project is running create a csv of user with this endpoint and payload.
     {
         "name": "bob",
         "username": "bob123",
-        "contactInformation": {
-            "email": "<bob123@hotmail.com>",
-            "phoneNumberOne": "1234567890",
-            "phoneNumberTwo": ""
-        },
+        "contactInformation": [ 
+            {
+                "email": "bob123@hotmail.com",
+                "phoneNumberOne": "1234567890",
+                "phoneNumberTwo": ""
+            },
+            {
+                "email": "bob123@gmail.com",
+                "phoneNumberOne": "0987654321",
+                "phoneNumberTwo": ""
+            }
+        ],
         "address": {
             "street": "123 ave",
             "city": "nice",
@@ -51,11 +58,18 @@ Once the project is running create a csv of user with this endpoint and payload.
     {
         "name": "John",
         "username": "john123",
-        "contactInformation": {
-            "email": "<john123@hotmail.com>",
-            "phoneNumberOne": "1234567890",
-            "phoneNumberTwo": ""
-        },
+        "contactInformation": [ 
+            {
+                "email": "john123@hotmail.com",
+                "phoneNumberOne": "1234567890",
+                "phoneNumberTwo": ""
+            },
+            {
+                "email": "john123@gmail.com",
+                "phoneNumberOne": "0987654321",
+                "phoneNumberTwo": ""
+            }
+        ],
         "address": {
             "street": "123 ave",
             "city": "nice",
