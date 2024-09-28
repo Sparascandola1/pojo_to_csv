@@ -1,7 +1,6 @@
 package com.csv_example.pojo_to_csv.models;
 
-import com.opencsv.bean.CsvBindByName;
-import com.opencsv.bean.CsvRecurse;
+import java.util.Set;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -13,12 +12,8 @@ import lombok.Setter;
 @Getter
 @Setter
 public class UserModel {
-    @CsvBindByName
     private String name;
-    @CsvBindByName
     private String username;
-    @CsvRecurse
-    private ContactModel contactInformation;
-    @CsvRecurse
+    private Set<ContactModel> contactInformation;
     private AddressModel address; 
 }
